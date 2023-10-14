@@ -1,7 +1,21 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
+<script>
+jQuery(document).ready(function(){  // execute anytime if we place it anywhere
+    jQuery('#btn').click(function(){ // events
+        jQuery('#box').slideUp(5000);   
+    })
+});
+</script>
+
+
+
 <div id="box" style="background-color: aqua; width: 100px; height: 100px; border: 3px solid black;"></div>
 
+<input type="button" id="btn" value="Click">
 <script>
-    jQuery('#box').slideUp(5000);
+    // jQuery('#box').slideUp(5000);
+    // jQuery('#btn').click(function(){ // events
+    //     jQuery('#box').slideUp(5000);   
+    // })
 </script>
