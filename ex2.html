@@ -1,0 +1,20 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<form id="frm">
+    <input type="text" id="name">
+    <input type="button" id="btn" value="Submit">
+</form>
+<div class="box"></div>
+
+<script>
+    $('#btn').click(function(){
+        name = $('#name').val();
+        if(name == "")
+        {
+            $('.box').html("Please fill the form");            
+        }else{
+            $('.box').hide();
+            $('#frm').html("Thanks "+name);
+        }
+    })
+</script>

@@ -1,0 +1,21 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<div id="box">My name is Manish</div>
+
+<input type="button" id="btn" value="Click">
+<input type="text" id="name">
+
+<script>
+    $('#btn').click(function(){
+        // alert($('#box').html());
+        // alert($('#box').text());
+        // console.log($('#box').text());
+        // console.log($('#name').val());
+
+        // $('#box').html("Babli Rani");
+        // $('#name').val("Babli Rani");
+
+        name = $('#name').val();
+        $('#box').html(name);
+    })
+</script>

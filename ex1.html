@@ -1,0 +1,18 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<input type="text" id="name">
+<div class="box"></div>
+
+<script>
+$('#name').keyup(function(){
+    name = $('#name').val();
+    if(name == "")
+    {
+        $('.box').html("");
+    }
+    else{
+        $('.box').html("Welcome " +name);
+    }
+
+})
+</script>
