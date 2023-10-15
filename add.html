@@ -1,0 +1,24 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<div id="box">Manish</div>
+
+<table border="2" id="table">
+    <tr>
+        <td>Manish</td>
+    </tr>
+</table>
+
+<input type="text" id="name">
+<input type="button" id="btn" value="Add">
+
+<script>
+    // $('#btn').click(function(){
+    //     $("#box").append(" Kumar");
+    // })
+
+    $('#btn').click(function(){
+        name = $("#name").val();
+        html = "<tr><td>"+name+"</td></tr>";
+        $("#table").prepend(html);
+    })
+</script>
